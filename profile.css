@@ -1,0 +1,137 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #084f2d;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    flex-grow: 1;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.profile-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    color: #084f2d;
+    margin-bottom: 10px;
+}
+
+.profile-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.profile-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.user-info, .order-history, .account-settings {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+}
+
+.user-info h2, .order-history h2, .account-settings h2 {
+    font-size: 24px;
+    color: #084f2d;
+    margin-bottom: 20px;
+}
+
+.user-info form, .account-settings form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info form label, .account-settings form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #084f2d;
+}
+
+.user-info form input, .account-settings form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.user-info form button, .account-settings form button {
+    padding: 10px;
+    background-color: #084f2d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.user-info form button:hover, .account-settings form button:hover {
+    background-color: #006d3a;
+    transform: scale(1.05);
+}
+
+.order-history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-history table th, .order-history table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.order-history table th {
+    background-color: #084f2d;
+    color: white;
+}
+
+.order-history table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - CyberCrate</title>
+    <link rel="stylesheet" href="product1.css">
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="search-bar">
+            <input type="text" placeholder="Search..." />
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </div>
+
+    <!-- Product Content -->
+    <div class="product-container">
+        <div class="product-images">
+            <img src="../images/product1.jpg" alt="Product Image" class="main-image">
+           
+        </div>
+
+        <div class="product-details">
+            <h1>Brass Cookware Set</h1>
+            <p class="product-description">Elevate your culinary experience with our brass cookware set, combining timeless elegance with exceptional heat conductivity for precise cooking results and enduring beauty in every dish. Crafted for discerning chefs, this set boasts a luxurious golden hue, ergonomic handles, and versatile pieces for effortless gourmet cooking.</p>
+            <p class="product-price">$99.99</p>
+            <div class="quantity">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1">
+            </div>
+            <button class="btn btn-add-to-cart">Add to Cart</button>
+
+            <div class="product-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p><strong>John Doe</strong> - <span>★★★★★</span></p>
+                    <p>This product is amazing! I highly recommend it.</p>
+                </div>
+                <div class="review">
+                    <p><strong>Jane Smith</strong> - <span>★★★★☆</span></p>
+                    <p>Great product, but there is room for improvement.</p>
+                </div>
+                <!-- Additional reviews as needed -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>We created Cybercrate because we wanted to create the best website for kitchenware shopping in the world. We found a lack in the market so we decided to create our own.</p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> +1 234 567 890</span>
+                    <span><i class="fas fa-envelope"></i> info@cybercrate.com</span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Contact Us</h2>
+                <form action="#">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+                    <textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+                    <button type="submit" class="btn btn-big contact-btn">
+                        <i class="fas fa-envelope"></i>
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 CyberCrate | Designed by Your Ctrl+Alt+Defeat
+        </div>
+    </footer>
+</body>
+</html>

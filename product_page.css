@@ -1,0 +1,259 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #084f2d;
+    color: white;
+    padding: 10px;
+}
+
+.search-bar {
+    flex-grow: 1;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Product categories */
+.categories {
+    background-color: #a0e0d5;
+    padding: 10px;
+}
+
+.categories ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.categories ul li {
+    margin-right: 20px;
+}
+
+.categories ul li a {
+    color: #084f2d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.categories ul li.active a {
+    color: #006d3a;
+}
+
+/* Product listings */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* Store tabs styling */
+.store-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.store-tab {
+    background-color: #084f2d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.store-tab.active {
+    background-color: #006d3a;
+}
+
+.store-tab:not(:last-child) {
+    margin-right: 10px;
+}
+
+.store-tab:hover {
+    background-color: #006d3a;
+}
+
+
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    background-color: #084f2d;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Product detail */
+.product-detail {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-detail h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.product-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product-detail p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: #084f2d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #006d3a;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #084f2d;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer .footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.footer h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer p, .footer span {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.footer .contact {
+    margin-bottom: 10px;
+}
+
+.footer .socials a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.footer .socials a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+

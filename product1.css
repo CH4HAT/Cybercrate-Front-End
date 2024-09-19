@@ -1,0 +1,158 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #084f2d;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    flex-grow: 1;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.product-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-images {
+    flex: 1;
+    min-width: 300px;
+}
+
+.product-images .main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-height: 400px; /* Limit maximum height of the main image */
+}
+
+.thumbnail-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnail-images img {
+    width: 50px; /* Reduce thumbnail size */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail-images img:hover {
+    transform: scale(1.1);
+}
+
+.product-details {
+    flex: 2;
+    min-width: 300px;
+}
+
+.product-details h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    color: #084f2d;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 24px;
+    color: #084f2d;
+    margin-bottom: 20px;
+}
+
+.quantity {
+    margin-bottom: 20px;
+}
+
+.quantity label {
+    font-weight: bold;
+    color: #084f2d;
+    margin-right: 10px;
+}
+
+.quantity input {
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-add-to-cart {
+    padding: 10px 20px;
+    background-color: #084f2d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #006d3a;
+    transform: scale(1.05);
+}
+
+.product-reviews {
+    margin-top: 40px;
+}
+
+.product-reviews h2 {
+    font-size: 24px;
+    color: #084f2d;
+    margin-bottom: 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review p {
+    margin-bottom: 5px;
+}
+
+.review span {
+    color: gold;
+}

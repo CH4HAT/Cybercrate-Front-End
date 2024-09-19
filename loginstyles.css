@@ -1,0 +1,132 @@
+/* Main content container */
+.main-content {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Left side with image */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-image {
+    max-width: 80%; /* Set the max width for the image */
+    max-height: 90%; /* Set the max height for the image */
+    object-fit: contain; /* Keeps the aspect ratio */
+}
+
+/* Right side with login container */
+.login-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Align login container to the right */
+    align-items: center;
+    padding-right: 50px; /* Add padding for spacing */
+}
+
+/* Login box styling */
+.login-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 60%; /* Adjust the width of the login box */
+    animation: slideInRight 1s forwards; /* Slide in animation from the right */
+}
+
+/* Brand styling */
+.brand h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    color: #084f2d;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 15px;
+    text-align-last: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #084f2d;
+}
+
+.input-group input {
+    width: 100%; /* Input fields take the full width of the container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+.login-button {
+    padding: 10px;
+    background-color: #084f2d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%; /* Button takes the full width of the container */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #006d3a;
+    transform: scale(1.05); /* Enlarge button slightly on hover */
+}
+
+/* Signup text styling */
+.signup-text {
+    margin-top: 10px;
+}
+
+.signup-text a {
+    color: #084f2d;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* Slide in animation for login box */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+
+
+/* Body styling */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #a0e0d5,#084f2d); /* Gradient background from left to right */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
